@@ -1,4 +1,4 @@
-package com.gustavo.taskflow;
+package com.gustavo.taskflow.domain.model;
 
 public enum TaskStatus {
     TODO,

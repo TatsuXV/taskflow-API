@@ -1,10 +1,10 @@
-import com.gustavo.taskflow.TaskStatus;
+package com.gustavo.taskflow.domain.model;
+
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.naming.Name;
 import java.time.LocalDate;
 
 @Entity

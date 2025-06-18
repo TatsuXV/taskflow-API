@@ -1,8 +1,10 @@
+package com.gustavo.taskflow.domain.model;
+
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.hibernate.action.internal.OrphanRemovalAction;
+import org.apache.catalina.User;
 
 import java.util.ArrayList;
 import java.util.List;

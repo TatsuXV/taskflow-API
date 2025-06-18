@@ -1,10 +1,10 @@
-import jakarta.annotation.Nullable;
+package com.gustavo.taskflow.domain.model;
+
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.naming.Name;
 import java.util.ArrayList;
 import java.util.List;
 
