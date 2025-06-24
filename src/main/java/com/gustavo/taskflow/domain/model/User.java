@@ -11,15 +11,14 @@ import java.util.List;
 @Entity
 @Table(name = "tb_user")
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
-
+@AllArgsConstructor
 
 public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Long id;
 
     @Column(nullable = false)
     private String nome;
@@ -30,6 +29,6 @@ public class User {
     @Column(nullable = false)
     private String password;
 
-    @OneToMany(mappedBy = "blind", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
     private List <Project> projects = new ArrayList<>();
 }

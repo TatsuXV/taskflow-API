@@ -18,7 +18,7 @@ public class TaskService {
         return taskRepository.findAll();
     }
 
-    public Optional findbyId(long id){
+    public Optional <Task> findById(Long id){
         return taskRepository.findById(id);
     }
 
@@ -26,7 +26,7 @@ public class TaskService {
         return taskRepository.save(task);
     }
 
-    public void delete(long id){
+    public void delete(Long id){
         taskRepository.deleteById(id);
     }
 }
